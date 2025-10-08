@@ -134,9 +134,9 @@ const _slideLima = function () {
   }, 1000);
 
   slideLima.addEventListener('animationend', () => {
-    slideLima.classList.add('animate__delay-3s')
+    slideLima.classList.add('animate__delay-20s')
     slideLima.classList.replace('animate__bounceIn', 'animate__fadeOut');
-    trims.classList.add('animate__animated', 'animate__fadeOut', 'animate__delay-3s');
+    trims.classList.add('animate__animated', 'animate__fadeOut', 'animate__delay-20s');
     setTimeout(() => {
       trims.remove();
       setTimeout(() => {
@@ -446,6 +446,7 @@ function confetti() {
 
   if (!onlyOnKonami) poof();
 };
+
 
 
 
