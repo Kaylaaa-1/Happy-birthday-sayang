@@ -142,8 +142,8 @@ const _slideLima = function () {
       setTimeout(() => {
         slideLima.remove();
         _slideEnam();
-      }, 1000);
-    }, 6000);
+      }, 5000);
+    }, 60000);
   });
 };
 
@@ -446,6 +446,7 @@ function confetti() {
 
   if (!onlyOnKonami) poof();
 };
+
 
 
 
