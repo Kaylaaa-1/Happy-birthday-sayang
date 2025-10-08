@@ -18,8 +18,8 @@ html {
 
   /* Set a background color that will be displayed
      while the background image is loading */
-  background-color: #FEC0CD;
-  height: 100%;
+  
+ 
 }
 
 
@@ -179,5 +179,6 @@ body {
   padding: 0;
   text-align: center;
 }
+
 
 
