@@ -161,7 +161,7 @@ new TypeIt("#teks1", {
 }).go();
 
 new TypeIt("#teks2", {
-  strings: ["Aku bukanlah seseorang yang sempurna, tapi aku harap kita bisa saling menyempurnakan satu sama lain.", " ", "barakallah fi umrik ya cantik, terima kasih sudah menjadi seseorang yang jadi warna dalam kehidupanku yang monokrom ini.", " ", "- Wish all you the best cantik nya aa 😊"],
+  strings: ["Aku bukanlah seseorang yang sempurna, tapi aku harap kita bisa saling menyempurnakan satu sama lain.", " ", "barakallah fi umrik ya cantik, terima kasih sudah menjadi seseorang yang jadi warna dalam kehidupanku yang monokrom ini.", " ", "- Wish all you the best cantik nya aa 😊", " ", "Bibahku tersayang 🤍"],
   startDelay: 2000,
   speed: 75,
   waitUntilVisible: true
@@ -446,6 +446,7 @@ function confetti() {
 
   if (!onlyOnKonami) poof();
 };
+
 
 
 
