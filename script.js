@@ -171,7 +171,7 @@ new TypeIt("#teks2", {
 new TypeIt("#trims", {
   strings: ["Love You Sayang, muachhhhhh 😘😘😘😘😘"],
   startDelay: 1000,
-  speed: 75,
+  speed: 50,
   loop: false,
   waitUntilVisible: true,
 }).go();
@@ -446,6 +446,7 @@ function confetti() {
 
   if (!onlyOnKonami) poof();
 };
+
 
 
 
