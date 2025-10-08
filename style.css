@@ -7,7 +7,7 @@ html {
 
 .bg {
   /* Location of the image */
-  background-image: url(./img/background.jpg);
+  background-image: url(img/background.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -179,4 +179,5 @@ body {
   padding: 0;
   text-align: center;
 }
+
 
