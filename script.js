@@ -1,50 +1,15 @@
-  // Fungsi untuk memulai musik
-  function playMusic() {
-    const music = document.getElementById('background-music');
-    if (!music) return;
-
-    music.muted = false; // pastikan tidak bisu
-    const playPromise = music.play();
-
-    if (playPromise !== undefined) {
-      playPromise
-        .then(() => {
-          console.log("Musik berhasil autoplay 🎵");
-        })
-        .catch((error) => {
-          console.warn("Autoplay diblokir browser. Tunggu interaksi pengguna.");
-          showAutoplayNotice();
-        });
-    }
-  }
-
-  // Menampilkan notifikasi jika autoplay diblokir
-  function showAutoplayNotice() {
-    const notice = document.createElement('div');
-    notice.textContent = "Klik di mana saja untuk memulai musik 🎶";
-    notice.style.position = "fixed";
-    notice.style.bottom = "20px";
-    notice.style.left = "50%";
-    notice.style.transform = "translateX(-50%)";
-    notice.style.background = "rgba(0,0,0,0.7)";
-    notice.style.color = "#fff";
-    notice.style.padding = "10px 16px";
-    notice.style.borderRadius = "8px";
-    notice.style.fontSize = "14px";
-    notice.style.zIndex = "9999";
-    document.body.appendChild(notice);
-
-    // Jika user klik, mainkan musik dan hilangkan pesan
-    const handler = () => {
-      playMusic();
-      notice.remove();
-      document.removeEventListener('click', handler);
-    };
-    document.addEventListener('click', handler);
-  }
-
-  // Jalankan saat halaman dimuat
-  window.addEventListener('DOMContentLoaded', playMusic);
+// Fungsi untuk memulai musik
+function playMusic() {
+  const music = document.getElementById('background-music');
+  music.play();
+}
+window.addEventListener('DOMContentLoaded', function() {
+  playMusic();
+});
+document.body.addEventListener('click', playMusic, { once: true });
+const content = document.getElementById('content');
+const footer = document.getElementsByTagName('footer')[0];
+const timer = document.getElementById('timer');
 
 const second = 1000,
   minute = second * 60,
@@ -481,3 +446,4 @@ function confetti() {
 
   if (!onlyOnKonami) poof();
 };
+
